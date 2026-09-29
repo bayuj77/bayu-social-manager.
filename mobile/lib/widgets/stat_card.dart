@@ -35,7 +35,8 @@ class StatCard extends StatelessWidget {
                 Text(
                   title,
                   style: theme.textTheme.titleMedium?.copyWith(
-                    color: contentColor.withOpacity(0.8),
+                    color: Colors.blue.withValues(alpha: 0.2)
+                  ),
                   ),
                 ),
                 Icon(icon, color: contentColor),
