@@ -18,7 +18,7 @@ class StatCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final cardColor = color ?? theme.colorScheme.primaryContainer;
-    final contentColor = color != null 
+    final contentColor = color != null
         ? theme.colorScheme.onSecondary
         : theme.colorScheme.onPrimaryContainer;
 
@@ -35,8 +35,7 @@ class StatCard extends StatelessWidget {
                 Text(
                   title,
                   style: theme.textTheme.titleMedium?.copyWith(
-                    color: Colors.blue.withValues(alpha: 0.2)
-                  ),
+                    color: Colors.blue.withValues(alpha: 0.2),
                   ),
                 ),
                 Icon(icon, color: contentColor),
